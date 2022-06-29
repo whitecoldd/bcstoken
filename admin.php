@@ -3,9 +3,8 @@
 require_once 'header.php';
 require_once './incs/dbh.inc.php';
 
-if (!isset($_SERVER['HTTP_REFERER'])) {
-    header('location: login.php');
-    exit;
+if(!isset($_SESSION['login'])){ //if login in session is not set
+    header("Location: login.php");
 }
 if (isset($_POST['submit'])) {
 

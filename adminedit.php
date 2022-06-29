@@ -4,9 +4,8 @@ require_once 'header.php';
 
 require_once './incs/dbh.inc.php';
 
-if (!isset($_SERVER['HTTP_REFERER'])) {
-    header('location: login.php');
-    exit;
+if(!isset($_SESSION['login'])){ //if login in session is not set
+    header("Location: login.php");
 }
 
 if (isset($_POST['update'])) {
@@ -54,7 +53,7 @@ if (isset($_GET['id'])) {
         <script type="text/javascript">
             var onloadCallback = function() {
                 grecaptcha.render('html_element', {
-                    'sitekey': '6LeUq60gAAAAAKVSujImoAt_puPSkH5XDJdJ4yyZ',
+                    'sitekey': '6LdV6a0gAAAAAIzTuU90cGkli9nFL3EoGs3M4WiS',
                     'callback': response
                 });
                 var response = grecaptcha.getResponse();
