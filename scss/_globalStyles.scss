@@ -1,0 +1,88 @@
+$width: 1920px;
+$mobileWidth: 360px;
+$tabWidth: 501px;
+
+$vw: 1/$width*100vw;
+$TELvw: 1/$mobileWidth*100vw;
+$TABvw: 1/$tabWidth*100vw;
+
+/* $LPTPvw: 1/960px*$width/$width*100vw;
+$TBLTvw: 1/768px*$width/$width*100vw; */
+$telBP: 500px;
+$tabBP: 1024px;
+
+
+@mixin flex ($display, $direction, $wrap, $justify, $lignI, $alignC) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $lignI;
+    align-content: $alignC;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171C2C;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    width: 100%;
+    padding-top: 151px*$vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.burderMenuExitBG {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    z-index: 2;
+}
+
+
+
+
+
+/* ========== Simple Slider ============ */
+.galary_trackImages_wrapper {
+    width: 100%;
+    /* height: 684px*$vw; */
+    overflow: hidden;
+    overflow-x: scroll;
+    transition: 0.3s;
+
+    scroll-behavior: smooth;
+}
+
+.galary_trackImages_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.galary_trackImages {
+    width: fit-content;
+    transition: 0.3s;
+    padding-bottom: 5px*$TELvw;
+
+    @include flex (flex, row, nowrap, flex-start, flex-start, unset);
+}
+/* ===================================== */

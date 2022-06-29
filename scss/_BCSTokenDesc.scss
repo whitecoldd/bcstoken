@@ -1,0 +1,207 @@
+// @include flex(flex, row, nowrap, space-between, center, unset);
+
+.BCSTokenDesc {
+    width: 100%;
+    padding: 0 150px*$vw;
+    margin-top: 200px*$vw;
+    margin-bottom: 200px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.BCSTokenDesc_items {
+    width: 946px*$vw;
+
+    @include flex(flex, row, wrap, space-between, flex-start, unset);
+}
+.BCSTokenDesc_item {
+    width: fit-content;
+    background: #171C2C;
+    border-radius: 18px*$vw;
+
+    border: double 3px*$vw transparent;
+    border-radius: 21px*$vw;
+    background-image: linear-gradient(#171C2C, #171C2C), 
+                        linear-gradient(to right, #EB2670, rgba(102, 102, 102, 0.1));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    p {
+        width: 272px*$vw;
+        padding: 0 40px*$vw 20px*$vw 40px*$vw;
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px*$vw;
+        line-height: 27px*$vw;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+    &:nth-child(2n + 1) {
+        margin-top: 50px*$vw;
+    }
+}
+.BCSTokenDesc_iconTitle {
+    width: fit-content;
+    margin-bottom: 50px*$vw;
+    padding: 40px*$vw 40px*$vw 0 40px*$vw;
+
+    @include flex(flex, row, nowrap, flex-start, center, unset);
+
+    .BCSTokenDesc_icon {
+        margin-right: 20px*$vw;
+    }
+    h4 {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px*$vw;
+        line-height: 55px*$vw;
+        color: #FFFFFF;
+    }
+}
+
+.BCSTokenDesc_w {
+    width: 100%;
+    margin-top: 45px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, flex-start, unset);
+}
+.BCSTokenDesc_desc {
+    width: 1100px*$vw;
+    margin-top: 60px*$vw;
+}
+.BCSTokenDesc_title {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px*$vw;
+    line-height: 82px*$vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px*$vw;
+}
+.BCSTokenDesc_text {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px*$vw;
+    line-height: 46px*$vw;
+    color: #C6C6C6;
+
+    ul {
+
+        li {
+            position: relative;
+            margin-bottom: 30px*$vw;
+        }
+    }
+}
+.BCSTokenDesc_bgimg {
+    width: 281px*$vw;
+    height: 619.38px*$vw;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.BCSTokenDesc_mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .BCSTokenDesc {
+        width: 100%;
+        padding: 0 10px*$TELvw*0.4;
+        margin-top: 80px*$TELvw;
+        margin-bottom: 50px*$TELvw*0.4;
+    }
+
+    .BCSTokenDesc_items {
+        width: 90%;
+        display: none;
+    }
+    .BCSTokenDesc_item {
+        margin: 0 20px*$TELvw;
+        border-radius: 18px*$TELvw*0.4;
+        border: double 3px*$TELvw*0.4 transparent;
+        border-radius: 21px*$TELvw*0.4;
+
+        p {
+            width: 272px*$TELvw*0.55;
+            padding: 0 40px*$TELvw*0.6 20px*$TELvw*0.6 40px*$TELvw*0.6;
+            font-size: 18px*$TELvw*0.6;
+            line-height: 27px*$TELvw*0.6;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-top: 0;
+        }
+        &:nth-child(2n + 2) {
+            margin-top: 0px*$TELvw;
+        }
+    }
+    .BCSTokenDesc_iconTitle {
+        width: fit-content;
+        margin-bottom: 50px*$TELvw*0.4;
+        padding: 40px*$TELvw*0.4 40px*$TELvw*0.4 0 40px*$TELvw*0.4;
+
+        .BCSTokenDesc_icon {
+            margin-right: 20px*$TELvw*0.4;
+        }
+        h4 {
+            font-size: 36px*$TELvw*0.4;
+            line-height: 55px*$TELvw*0.4;
+        }
+    }
+
+    .BCSTokenDesc_w {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        margin-top: 45px*$TELvw;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+    }
+    .BCSTokenDesc_desc {
+        width: 90%;
+        margin-top: 60px*$TELvw*0.5;
+    }
+    .BCSTokenDesc_title {
+        font-size: 54px*$TELvw*0.5;
+        line-height: 82px*$TELvw*0.5;
+        margin-bottom: 40px*$TELvw*0.5;
+    }
+    .BCSTokenDesc_text {
+        font-size: 30px*$TELvw*0.5;
+        line-height: 46px*$TELvw*0.5;
+    }
+    .BCSTokenDesc_bgimg {
+        width: 281px*$TELvw*0.5;
+        height: 619.38px*$TELvw*0.5;
+        position: absolute;
+
+        img {
+            opacity: 0.3;
+        }
+    }
+
+    .BCSTokenDesc_mobile {
+        display: block;
+        width: inherit;
+    }
+}

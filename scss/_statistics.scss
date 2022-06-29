@@ -1,0 +1,187 @@
+.statistics {
+    width: 100%;
+    padding: 0 290px*$vw;
+    
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+.statistics_w {
+    width: 100%;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+}
+
+.statistics_mobile {
+    display: none;
+}
+
+.statistics_row {
+    width: 100%;
+    margin-bottom: 46px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+
+    &:nth-child(2n + 2) {
+        flex-direction: row-reverse;
+    }
+}
+
+.statistics_graphics {
+    width: 668px*$vw;
+    height: 405px*$vw;
+    border-radius: 35px*$vw;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.statistics_text {
+    width: 611px*$vw;
+}
+.statistics_text_title {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px*$vw;
+    line-height: 82px*$vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px*$vw;
+}
+.statistics_text_p {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px*$vw;
+    line-height: 37px*$vw;
+    color: #C6C6C6;
+}
+
+.claim {
+    width: 100%;
+    padding: 0 150px*$vw;
+    position: relative;
+    margin: 100px*$vw 0;
+    
+    @include flex(flex, row, nowrap, space-between, center, unset);
+
+    button {
+        padding: 21px*$vw 90px*$vw;
+        background-color: #FFFFFF;
+        border-radius: 89px*$vw;
+        border: 2px solid #fff;
+        cursor: pointer;
+
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px*$vw;
+        line-height: 46px*$vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #890033;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid #890033;
+            color: #fff;
+        }
+    }
+}
+.claim_blur {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    left: -10%;
+    z-index: -1;
+
+    background-color: #EB266F;
+    filter: blur(91px*$vw);
+}
+.claim_title {
+    width: 432px*$vw;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px*$vw;
+    line-height: 82px*$vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .statistics {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        margin-top: 50px*$TELvw;
+    }
+
+    .statistics_w {
+        display: none;
+    }
+
+    .statistics_mobile {
+        display: block;
+        width: inherit;
+    }
+
+    .statistics_row {
+        width: 100%;
+        margin-bottom: 46px*$TELvw;
+
+        @include flex(flex, column, wrap, space-between, center, unset);
+
+        &:nth-child(2n + 2) {
+            flex-direction: row;
+        }
+        &:nth-child(2n + 1) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .statistics_graphics {
+        width: 290px*$TELvw;
+        height: 175px*$TELvw;
+        border-radius: 21px*$TELvw;
+        margin-right: 15px*$TELvw;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .statistics_logo {
+        width: 250px*$TELvw;
+        height: 250px*$TELvw;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .statistics_text {
+        width: 90%;
+        margin-bottom: 30px*$TELvw;
+    }
+    .statistics_text_title {
+        font-size: 54px*$TELvw*0.5;
+        line-height: 82px*$TELvw*0.5;
+        margin-bottom: 40px*$TELvw*0.5;
+    }
+    .statistics_text_p {
+        font-size: 24px*$TELvw*0.7;
+        line-height: 37px*$TELvw*0.7;
+    }
+
+}

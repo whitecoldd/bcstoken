@@ -1,0 +1,107 @@
+.topBanner {
+    width: 100%;
+    padding-left: 270px*$vw;
+    position: relative;
+    margin-bottom: 100px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    h1 {
+        width: 784px*$vw;
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 84px*$vw;
+        line-height: 128px*$vw;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        margin-top: 215px*$vw;
+        margin-bottom: 40px*$vw;
+    }
+    p {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px*$vw;
+        line-height: 46px*$vw;
+        color: #FFFFFF;
+        margin-bottom: 70px*$vw;
+    }
+}
+.topBanner_btns {
+    width: 365px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+}
+.topBanner_bgimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .topBanner {
+        width: 100%;
+        padding-left: 20px*$TELvw;
+        position: relative;
+        margin-bottom: 10px*$TELvw;
+
+        h1 {
+            width: 784px*$TELvw*0.4;
+            font-size: 84px*$TELvw*0.4;
+            line-height: 128px*$TELvw*0.4;
+            margin-top: 215px*$TELvw*0.4;
+            margin-bottom: 40px*$TELvw*0.4;
+        }
+        p {
+            font-size: 30px*$TELvw*0.45;
+            line-height: 46px*$TELvw*0.45;
+            margin-bottom: 70px*$TELvw*0.45;
+        }
+    }
+    .topBanner_btns {
+        width: 90%;
+
+        .bicas {
+            padding: 15px*$TELvw*0.7 42px*$TELvw*0.7;
+            gap: 10px*$TELvw*0.7;
+            border-radius: 21px*$TELvw*0.7;
+
+            span {
+                font-size: 16px*$TELvw;
+                line-height: 24px*$TELvw;
+            }
+        }
+
+        .white_paper {
+            height: 46px*$TELvw*0.8;
+            border: double 3px*$TELvw*0.8 transparent;
+            border-radius: 21px*$TELvw*0.8;
+            font-size: 16px*$TELvw*0.8;
+            line-height: 24px*$TELvw*0.8;
+            letter-spacing: 0.17em;
+
+            span {
+                padding: 15px*$TELvw*0.8;
+            }
+        }
+    }
+
+    .topBanner_bgimg {
+        width: 143px*$TELvw*1.4;
+        height: 131.3px*$TELvw*1.4;
+        position: absolute;
+        top: 110px*$TELvw;
+        right: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

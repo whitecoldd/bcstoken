@@ -1,0 +1,69 @@
+.signup {
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    background: transparent;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.signup_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.signup_form input {
+    margin: 10px 0px;
+    border-radius: 2.5vw;
+}
+
+.signup_input {
+    width: 20vw;
+    height: 2.1875vw;
+    background: #FFFFFF;
+    border-radius: 2.5vw;
+    border: none;
+    outline: none;
+    padding-left: 1.5625vw;
+}
+
+.signup_btn {
+    margin: 20px;
+}
+
+.signup p {
+    padding: 3px 7px; 
+}
+
+.signup h2{
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+@media screen and (max-width: 500px){
+    .signup_form {
+        width: 100%;
+    
+    }
+    .signup_form input{
+        width: 80%;
+        height: 120%;
+    }
+}
+.ch{
+    margin-top: 100px !important;
+    color: #FFFFFF !important;
+}

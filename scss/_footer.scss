@@ -1,0 +1,195 @@
+// @include flex(flex, column, nowrap, flex-start, center, unset);
+
+.footer {
+    width: 100%;
+    position: relative;
+    margin-top: 220px*$vw;
+    
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    .header_logo {
+        margin-bottom: 16px*$vw;
+    }
+}
+.footer_bg {
+    width: 3189px*$vw;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(360deg, rgba(235, 38, 111, 0.37) 15.09%, #171C2C 107.03%);
+    background-position-y: 10px*$vw;
+    background-size: 100%;
+    filter: blur(47px*$vw);
+}
+.footer_text {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px*$vw;
+    line-height: 23px*$vw;
+    color: #C6C6C6;
+    margin-bottom: 30px*$vw;
+}
+
+.footer_subscribe {
+    width: 1020px*$vw;
+    margin-bottom: 30px*$vw;
+
+    @include flex(flex, row, nowrap, flex-start, center, unset);
+
+    .footer_subscr_input {
+        width: 900px*$vw;
+        height: 42px*$vw;
+        background: #FFFFFF;
+        border-radius: 48px*$vw;
+        border: none;
+        outline: none;
+        padding-left: 30px*$vw;
+    }
+    input[type="submit"] {
+        background: #EB266F;
+        border-radius: 48px*$vw;
+        border: none;
+        outline: none;
+        padding: 6px*$vw 48px*$vw;
+        cursor: pointer;
+
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px*$vw;
+        line-height: 30px*$vw;
+        color: #FFFFFF;
+
+        position: relative;
+        right: 66px*$vw;
+        transition: 0.3s;
+
+        &:hover {
+            background: #fff;
+            color: #EB266F;
+        }
+    }
+}
+
+
+
+.footer_socials {
+    margin-bottom: 15px*$vw;
+
+    @include flex(flex, row, nowrap, center, center, unset);
+}
+.footer_social_item {
+    width: 30px*$vw;
+    height: 30px*$vw;
+    margin: 0 15px*$vw;
+}
+
+
+
+
+.footer_copyright {
+    margin-bottom: 15px*$vw;
+
+    @include flex(flex, row, nowrap, flex-start, center, unset);
+
+    p {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px*$vw;
+        line-height: 27px*$vw;
+        color: #AFAFAF;
+        margin-right: 17px*$vw;
+    }
+}
+.footer_copyright_logo {
+    width: 29.2px*$vw;
+    height: 33.45px*$vw;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .footer {
+        margin-top: 100px*$TELvw;
+
+        .header_logo {
+            margin-bottom: 16px*$TELvw;
+        }
+    }
+    .footer_bg {
+        width: 100%;
+        height: 120%;
+        background-position-y: 10px*$vw;
+        filter: blur(30px*$vw);
+    }
+    .footer_text {
+        width: 80%;
+        font-size: 15px*$TELvw*0.8;
+        line-height: 23px*$TELvw*0.8;
+        margin-bottom: 30px*$TELvw*0.8;
+        text-align: center;
+    }
+
+    .footer_subscribe {
+        width: 90%;
+        margin-bottom: 30px*$TELvw;
+        position: relative;
+
+        .footer_subscr_input {
+            width: 110%;
+            height: 42px*$TELvw*0.7;
+            border-radius: 48px*$TELvw*0.7;
+            padding-left: 30px*$TELvw*0.7;
+            padding-right: 136px*$TELvw;
+        }
+        input[type="submit"] {
+            border-radius: 48px*$TELvw*0.7;
+            padding: 6px*$TELvw*0.7 48px*$TELvw*0.7;
+            font-size: 20px*$TELvw*0.7;
+            line-height: 30px*$TELvw*0.7;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+
+
+    .footer_socials {
+        margin-bottom: 15px*$TELvw;
+    }
+    .footer_social_item {
+        width: 30px*$TELvw;
+        height: 30px*$TELvw;
+        margin: 0 15px*$TELvw;
+    }
+
+
+
+
+    .footer_copyright {
+        margin-bottom: 15px*$TELvw;
+
+        p {
+            font-size: 18px*$TELvw*0.7;
+            line-height: 27px*$TELvw*0.7;
+            margin-right: 17px*$TELvw*0.7;
+        }
+    }
+    .footer_copyright_logo {
+        width: 29.2px*$TELvw;
+        height: 33.45px*$TELvw;
+    }
+}

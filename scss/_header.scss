@@ -1,0 +1,193 @@
+.header {
+    width: 100%;
+    padding: 30px*$vw 150px*$vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #171C2C;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+}
+
+.header_logo {
+    width: 173px*$vw;
+    height: 91px*$vw;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.nav {
+    justify-self: center;
+    
+    ul {
+        @include flex(flex, row, nowrap, flex-start, center, unset);
+
+        li {
+            margin: 0 17.5px*$vw;
+        }
+    }
+
+    a {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px*$vw;
+        line-height: 30px*$vw;
+        color: #FFFFFF;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.header_btns {
+    width: 330px*$vw;
+
+    @include flex(flex, row, nowrap, space-between, center, unset);
+}
+.bicas {
+    padding: 15px*$vw 42px*$vw;
+    gap: 10px*$vw;
+    border: none;
+    border-radius: 21px*$vw;
+    cursor: pointer;
+    background-color: #FFFFFF;
+
+    span {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px*$vw;
+        line-height: 24px*$vw;
+        letter-spacing: 0.17em;
+
+        background: linear-gradient(97.45deg, #B62D64 8.97%, #78717E 119.2%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.white_paper {
+    height: 46px*$vw;
+    border: double 3px*$vw transparent;
+    border-radius: 21px*$vw;
+    background-image: linear-gradient(#171C2C, #171C2C), 
+                        linear-gradient(to right, #EB2670, rgba(102, 102, 102, 0.5));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px*$vw;
+    line-height: 24px*$vw;
+    letter-spacing: 0.17em;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    a {
+        color: #fff;
+    }
+
+    span {
+        padding: 15px*$vw;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 100%;
+        padding: 10px*$TELvw 20px*$TELvw;
+    }
+
+    .header_logo {
+        width: 70px*$TELvw;
+        height: 38px*$TELvw;
+    }
+
+    .nav {
+        justify-self: center;
+
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+
+        transition: 0.3s;
+        
+        ul {
+            width: 100%;
+            padding-top: 50px*$TELvw;
+
+            @include flex(flex, column, nowrap, flex-start, center, unset);
+
+            li {
+                margin: 0 17.5px*$TELvw;
+                margin-bottom: 20px*$TELvw;
+            }
+        }
+
+        a {
+            font-size: 20px*$TELvw;
+            line-height: 30px*$TELvw;
+        }
+    }
+
+    .hamburger {
+        width: 33px*$TELvw;
+        display: inline-block;
+        z-index: 11;
+    }
+    .hamburger-box,
+    .hamburger-inner {
+        width: 100%;
+
+        &::after,
+        &::before {
+            width: 100%;
+        }
+    }
+
+    .header_btns {
+        width: 150px*$TELvw;
+    }
+    .bicas {
+        padding: 15px*$TELvw*0.3 42px*$TELvw*0.3;
+        gap: 10px*$TELvw*0.3;
+        border-radius: 21px*$TELvw*0.4;
+
+        span {
+            font-size: 16px*$TELvw*0.8;
+            line-height: 24px*$TELvw*0.8;
+        }
+    }
+    .white_paper {
+        height: 46px*$TELvw*0.65;
+        border: double 3px*$TELvw*0.45 transparent;
+        border-radius: 21px*$TELvw*0.45;
+        font-size: 16px*$TELvw*0.45;
+        line-height: 24px*$TELvw*0.45;
+
+        span {
+            padding: 15px*$TELvw*0.45;
+        }
+    }
+
+}

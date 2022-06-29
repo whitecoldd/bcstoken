@@ -1,0 +1,1718 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration-thickness: 1px;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* $LPTPvw: 1/960px*$width/$width*100vw;
+$TBLTvw: 1/768px*$width/$width*100vw; */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #171C2C;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  width: 100%;
+  padding-top: 7.86458vw;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+    padding-top: 22.22222vw;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.burderMenuExitBG {
+  /* display: none; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  z-index: 110;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* ========== Simple Slider ============ */
+.galary_trackImages_wrapper {
+  width: 100%;
+  /* height: 684px*$vw; */
+  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  scroll-behavior: smooth;
+}
+
+.galary_trackImages_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.galary_trackImages {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 1.38889vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+/* ===================================== */
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 0vw 0vw;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-box {
+  width: 11.11111vw;
+  height: 6.66667vw;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -0.55556vw;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 11.11111vw;
+  height: 1.11111vw;
+  background-color: white;
+  border-radius: 1.11111vw;
+  position: absolute;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -2.77778vw;
+}
+
+.hamburger-inner::after {
+  bottom: -2.77778vw;
+}
+
+/*
+   * Collapse
+   */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  -webkit-transition-duration: 0.13s;
+          transition-duration: 0.13s;
+  -webkit-transition-delay: 0.13s;
+          transition-delay: 0.13s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse .hamburger-inner::after {
+  top: -5.55556vw;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+
+.hamburger--collapse .hamburger-inner::before {
+  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+  -webkit-transform: translate3d(0, -2.77778vw, 0) rotate(-45deg);
+          transform: translate3d(0, -2.77778vw, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header {
+  width: 100%;
+  padding: 1.5625vw 7.8125vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #171C2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.header_logo {
+  width: 9.01042vw;
+  height: 4.73958vw;
+}
+
+.header_logo img {
+  width: 100%;
+  height: auto;
+}
+
+.nav {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.nav ul li {
+  margin: 0 0.91146vw;
+}
+
+.nav a {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.04167vw;
+  line-height: 1.5625vw;
+  color: #FFFFFF;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header_btns {
+  width: 17.1875vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.bicas {
+  padding: 0.78125vw 2.1875vw;
+  gap: 0.52083vw;
+  border: none;
+  border-radius: 1.09375vw;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.bicas span {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83333vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.17em;
+  background: linear-gradient(97.45deg, #B62D64 8.97%, #78717E 119.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.white_paper {
+  height: 2.39583vw;
+  border: double 0.15625vw transparent;
+  border-radius: 1.09375vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171C2C), to(#171C2C)), -webkit-gradient(linear, left top, right top, from(#EB2670), to(rgba(102, 102, 102, 0.5)));
+  background-image: linear-gradient(#171C2C, #171C2C), linear-gradient(to right, #EB2670, rgba(102, 102, 102, 0.5));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.83333vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.17em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.white_paper a {
+  color: #fff;
+}
+
+.white_paper span {
+  padding: 0.78125vw;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 100%;
+    padding: 2.77778vw 5.55556vw;
+  }
+  .header_logo {
+    width: 19.44444vw;
+    height: 10.55556vw;
+  }
+  .nav {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .nav ul {
+    width: 100%;
+    padding-top: 13.88889vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: unset;
+        align-content: unset;
+  }
+  .nav ul li {
+    margin: 0 4.86111vw;
+    margin-bottom: 5.55556vw;
+  }
+  .nav a {
+    font-size: 5.55556vw;
+    line-height: 8.33333vw;
+  }
+  .hamburger {
+    width: 9.16667vw;
+    display: inline-block;
+    z-index: 11;
+  }
+  .hamburger-box,
+  .hamburger-inner {
+    width: 100%;
+  }
+  .hamburger-box::after, .hamburger-box::before,
+  .hamburger-inner::after,
+  .hamburger-inner::before {
+    width: 100%;
+  }
+  .header_btns {
+    width: 41.66667vw;
+  }
+  .bicas {
+    padding: 1.25vw 3.5vw;
+    gap: 0.83333vw;
+    border-radius: 2.33333vw;
+  }
+  .bicas span {
+    font-size: 3.55556vw;
+    line-height: 5.33333vw;
+  }
+  .white_paper {
+    height: 8.30556vw;
+    border: double 0.375vw transparent;
+    border-radius: 2.625vw;
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+  .white_paper span {
+    padding: 1.875vw;
+  }
+}
+
+/* ======================================================= */
+.header {
+  background-color: transparent;
+}
+
+.header_btns {
+  width: auto;
+}
+
+.ClaimBcs {
+  width: 100%;
+  padding: 0 20.3125vw;
+  margin-bottom: 5.20833vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.ClaimBcs h1 {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.375vw;
+  line-height: 6.66667vw;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.ClaimBcs .ClaimBcs_subtitle {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #FFFFFF;
+}
+
+.ClaimBcs .timer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.ClaimBcs .ClaimBcs_sub_text {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.04167vw;
+  line-height: 1.5625vw;
+  color: #BEBEBE;
+  margin-bottom: 2.60417vw;
+}
+
+.ClaimBcs_payAddress {
+  width: 59.47917vw;
+  height: 19.21875vw;
+  padding: 2.34375vw;
+  border: 0.05208vw solid #FFFFFF;
+  border-radius: 0.78125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.ClaimBcs_payAddress_ {
+  width: 100%;
+  margin-bottom: 2.34375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.ClaimBcs_payAddress_title {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #FFFFFF;
+  margin-bottom: 1.30208vw;
+}
+
+.ClaimBcs_payAddress_code {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #EE3B7E;
+}
+
+.wallet_form {
+  width: 59.47917vw;
+  background: #181D2D;
+  border-radius: 0.78125vw;
+  padding: 5.20833vw 3.69792vw 3.28125vw 3.69792vw;
+  margin: 0 auto;
+  margin-bottom: 6.97917vw;
+}
+
+.wallet_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.wallet_form form button {
+  padding: 0.78125vw 9.79167vw;
+  gap: 0.52083vw;
+  background-color: #FFFFFF;
+  border-radius: 1.45833vw;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.wallet_form form button span {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875vw;
+  line-height: 2.86458vw;
+  letter-spacing: 0.17em;
+  background: linear-gradient(97.45deg, #B62D64 8.97%, #78717E 119.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.walletForm_input {
+  width: 100%;
+  position: relative;
+}
+
+.walletForm_input:first-child {
+  margin-bottom: 3.64583vw;
+}
+
+.walletForm_input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 3.90625vw;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5.55%, #7A7C84), color-stop(89.35%, #41393D));
+  background: linear-gradient(90deg, #7A7C84 5.55%, #41393D 89.35%);
+  border-radius: 3.59375vw;
+  padding-right: 5.20833vw;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  text-align: right;
+  color: #C8C8C8;
+}
+
+.walletForm_input span {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #C8C8C8;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(10%, -50%);
+          transform: translate(10%, -50%);
+}
+
+.walletForm_input .walletForm_input_img {
+  width: 2.44792vw;
+  height: 2.44792vw;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-48%, -50%);
+          transform: translate(-48%, -50%);
+}
+
+.walletForm_input .walletForm_input_img img {
+  width: 100%;
+  height: auto;
+}
+
+.wallet_form_underInputsText {
+  width: 100%;
+  margin-top: 2.60417vw;
+  margin-bottom: 4.16667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.wallet_form_underInputsText span {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #C8C8C8;
+}
+
+.wallet_form_underInputsText p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #FFFFFF;
+}
+
+.walletForm_notify {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.72917vw;
+  line-height: 1.09375vw;
+  color: #FFFFFF;
+  margin-top: 0.83333vw;
+}
+
+.instructions {
+  width: 100%;
+  padding: 0 20.3125vw;
+}
+
+.instructions h2 {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8125vw;
+  line-height: 4.27083vw;
+  color: #FFFFFF;
+  margin-bottom: 1.5625vw;
+}
+
+.instructions li {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #D9D9D9;
+}
+
+.modal_window {
+  width: 38.90625vw;
+  height: 31.51042vw;
+  padding: 3.125vw 3.48958vw 5.57292vw 3.48958vw;
+  background: #CEBAC1;
+  border-radius: 0.78125vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 111;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal_window h3 {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #171C2C;
+  margin-bottom: 2.76042vw;
+}
+
+.modal_metamask {
+  width: 31.97917vw;
+  height: 17.65625vw;
+  background-color: #2C1D33;
+  border: 0.13021vw solid #EB266F;
+  border-radius: 1.04167vw;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.modal_metamask_img {
+  width: 7.13542vw;
+  height: 6.5625vw;
+  margin: 4.73958vw 0 2.1875vw 0;
+}
+
+.modal_metamask_img img {
+  width: 100%;
+  height: auto;
+}
+
+.modal_metamask_text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 2.39583vw;
+  color: #FFFFFF;
+  margin-bottom: 1.77083vw;
+}
+
+.modal_close {
+  width: 0.9375vw;
+  height: 0.88542vw;
+  position: absolute;
+  right: 1.5625vw;
+  top: 1.5625vw;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.modal_close img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  width: 78.125vw;
+  height: 114.58333vw;
+  position: absolute;
+  display: none;
+}
+
+.bg1 {
+  display: block;
+  top: -41.66667vw;
+  left: -7.8125vw;
+  z-index: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bg2 {
+  display: block;
+  top: -41.66667vw;
+  right: -7.8125vw;
+  z-index: -1;
+}
+
+.bg3 {
+  display: block;
+  top: 20.83333vw;
+  left: -7.8125vw;
+  z-index: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bg4 {
+  display: block;
+  top: 20.83333vw;
+  right: -7.8125vw;
+  z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .white_paper span {
+    font-size: 3.05556vw;
+  }
+  .ClaimBcs {
+    padding: 0 5.55556vw;
+    margin-bottom: 13.88889vw;
+  }
+  .ClaimBcs h1 {
+    font-size: 11.66667vw;
+    line-height: 17.77778vw;
+  }
+  .ClaimBcs .ClaimBcs_subtitle {
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .ClaimBcs .ClaimBcs_sub_text {
+    font-size: 2.77778vw;
+    line-height: 4.16667vw;
+    margin-bottom: 6.94444vw;
+  }
+  .ClaimBcs_payAddress {
+    width: 88.82222vw;
+    height: auto;
+    padding: 5vw;
+    border: 0.11111vw solid #FFFFFF;
+    border-radius: 1.66667vw;
+  }
+  .ClaimBcs_payAddress_ {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .ClaimBcs_payAddress_:last-child {
+    margin-bottom: 0;
+  }
+  .ClaimBcs_payAddress_title {
+    font-size: 3.33333vw;
+    line-height: 5.11111vw;
+    margin-bottom: 2.77778vw;
+  }
+  .ClaimBcs_payAddress_code {
+    font-size: 3.33333vw;
+    line-height: 5.11111vw;
+  }
+  .wallet_form {
+    width: 90%;
+    border-radius: 4.16667vw;
+    padding: 8.33333vw 4.16667vw 5.55556vw 4.16667vw;
+    margin-bottom: 22.22222vw;
+  }
+  .wallet_form form button {
+    padding: 1.25vw 15.66667vw;
+    gap: 0.83333vw;
+    border-radius: 2.33333vw;
+  }
+  .wallet_form form button span {
+    font-size: 3vw;
+    line-height: 4.58333vw;
+  }
+  .walletForm_input {
+    width: 100%;
+    position: relative;
+  }
+  .walletForm_input:first-child {
+    margin-bottom: 9.72222vw;
+  }
+  .walletForm_input input {
+    height: 10.41667vw;
+    border-radius: 9.58333vw;
+    padding-right: 13.88889vw;
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .walletForm_input span {
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .walletForm_input .walletForm_input_img {
+    width: 6.52778vw;
+    height: 6.52778vw;
+  }
+  .wallet_form_underInputsText {
+    margin-top: 6.94444vw;
+    margin-bottom: 11.11111vw;
+  }
+  .wallet_form_underInputsText span {
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .wallet_form_underInputsText p {
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .walletForm_notify {
+    width: 70%;
+    font-size: 2.33333vw;
+    line-height: 3.5vw;
+    margin-top: 2.66667vw;
+  }
+  .instructions {
+    width: 100%;
+    padding: 0 13.88889vw;
+  }
+  .instructions h2 {
+    font-size: 7.5vw;
+    line-height: 11.38889vw;
+    margin-bottom: 4.16667vw;
+  }
+  .instructions li {
+    font-size: 4.16667vw;
+    line-height: 6.38889vw;
+  }
+  .modal_window {
+    width: 83vw;
+    height: 84.02778vw;
+    padding: 6.66667vw 7.44444vw 11.88889vw 7.44444vw;
+    border-radius: 1.66667vw;
+  }
+  .modal_window h3 {
+    font-size: 5.83333vw;
+    line-height: 8.94444vw;
+    margin-bottom: 10.30556vw;
+  }
+  .modal_metamask {
+    width: 68.22222vw;
+    height: auto;
+    border: 0.27778vw solid #EB266F;
+    border-radius: 2.22222vw;
+  }
+  .modal_metamask_img {
+    width: 19.02778vw;
+    height: 17.5vw;
+    margin: 10.11111vw 0 4.66667vw 0;
+  }
+  .modal_metamask_text {
+    font-size: 5.83333vw;
+    line-height: 8.94444vw;
+    margin-bottom: 6.61111vw;
+  }
+  .modal_close {
+    width: 4vw;
+    height: 3.77778vw;
+    right: 6.66667vw;
+    top: 6.66667vw;
+  }
+  .bg {
+    width: 100vw;
+    height: 244.44444vw;
+    position: absolute;
+    display: none;
+  }
+  .bg img {
+    width: 100%;
+    height: auto;
+  }
+  .bg1 {
+    display: block;
+    top: -88.88889vw;
+    left: 0vw;
+    z-index: -1;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .bg2 {
+    display: block;
+    top: -88.88889vw;
+    right: 0vw;
+    z-index: -1;
+  }
+  .bg3 {
+    display: block;
+    top: 44.44444vw;
+    left: 0vw;
+    z-index: -1;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .bg4 {
+    display: block;
+    top: 44.44444vw;
+    right: 0vw;
+    z-index: -1;
+  }
+}
+
+/* ======================================================= */
+.footer {
+  width: 100%;
+  position: relative;
+  margin-top: 11.45833vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.footer .header_logo {
+  margin-bottom: 0.83333vw;
+}
+
+.footer_bg {
+  width: 166.09375vw;
+  height: 200%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15.09%, rgba(235, 38, 111, 0.37)), color-stop(107.03%, #171C2C));
+  background: linear-gradient(360deg, rgba(235, 38, 111, 0.37) 15.09%, #171C2C 107.03%);
+  background-position-y: 0.52083vw;
+  background-size: 100%;
+  -webkit-filter: blur(2.44792vw);
+          filter: blur(2.44792vw);
+}
+
+.footer_text {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 1.19792vw;
+  color: #C6C6C6;
+  margin-bottom: 1.5625vw;
+}
+
+.footer_subscribe {
+  width: 53.125vw;
+  margin-bottom: 1.5625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.footer_subscribe .footer_subscr_input {
+  width: 46.875vw;
+  height: 2.1875vw;
+  background: #FFFFFF;
+  border-radius: 2.5vw;
+  border: none;
+  outline: none;
+  padding-left: 1.5625vw;
+}
+
+.footer_subscribe input[type="submit"] {
+  background: #EB266F;
+  border-radius: 2.5vw;
+  border: none;
+  outline: none;
+  padding: 0.3125vw 2.5vw;
+  cursor: pointer;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.04167vw;
+  line-height: 1.5625vw;
+  color: #FFFFFF;
+  position: relative;
+  right: 3.4375vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer_subscribe input[type="submit"]:hover {
+  background: #fff;
+  color: #EB266F;
+}
+
+.footer_socials {
+  margin-bottom: 0.78125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.footer_social_item {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  margin: 0 0.78125vw;
+}
+
+.footer_copyright {
+  margin-bottom: 0.78125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.footer_copyright p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375vw;
+  line-height: 1.40625vw;
+  color: #AFAFAF;
+  margin-right: 0.88542vw;
+}
+
+.footer_copyright_logo {
+  width: 1.52083vw;
+  height: 1.74219vw;
+}
+
+.footer_copyright_logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    margin-top: 27.77778vw;
+  }
+  .footer .header_logo {
+    margin-bottom: 4.44444vw;
+  }
+  .footer_bg {
+    width: 100%;
+    height: 120%;
+    background-position-y: 0.52083vw;
+    -webkit-filter: blur(1.5625vw);
+            filter: blur(1.5625vw);
+  }
+  .footer_text {
+    width: 80%;
+    font-size: 3.33333vw;
+    line-height: 5.11111vw;
+    margin-bottom: 6.66667vw;
+    text-align: center;
+  }
+  .footer_subscribe {
+    width: 90%;
+    margin-bottom: 8.33333vw;
+    position: relative;
+  }
+  .footer_subscribe .footer_subscr_input {
+    width: 110%;
+    height: 8.16667vw;
+    border-radius: 9.33333vw;
+    padding-left: 5.83333vw;
+    padding-right: 37.77778vw;
+  }
+  .footer_subscribe input[type="submit"] {
+    border-radius: 9.33333vw;
+    padding: 1.16667vw 9.33333vw;
+    font-size: 3.88889vw;
+    line-height: 5.83333vw;
+    position: absolute;
+    right: 0;
+  }
+  .footer_socials {
+    margin-bottom: 4.16667vw;
+  }
+  .footer_social_item {
+    width: 8.33333vw;
+    height: 8.33333vw;
+    margin: 0 4.16667vw;
+  }
+  .footer_copyright {
+    margin-bottom: 4.16667vw;
+  }
+  .footer_copyright p {
+    font-size: 3.5vw;
+    line-height: 5.25vw;
+    margin-right: 3.30556vw;
+  }
+  .footer_copyright_logo {
+    width: 8.11111vw;
+    height: 9.29167vw;
+  }
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
